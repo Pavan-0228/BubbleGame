@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+button{
+    width: 6vw;
+    padding: 0 5px;
+    border: none;
+    background-color: #dadada;
+    color: #3d6765;
+    border-radius: 8px;
+    font-size: 1vw;
+    text-align: center;
+    padding: 6px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+button:hover{
+    background-color: #b6b6b6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+#plane{
+    overflow: hidden;
+    height: 85%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.ptop{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(69, 158, 153);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.box h2{
+    font-weight: 600;
+    color: #fff;
+}
+.ele{
+    width: 2.5vw;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(29, 133, 128);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3vw;
+    padding: .2vw .3vw;
+}
+.pfoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: #dadada;
+    padding: 25px;
+    gap: 10px;
+}
+.pfoot h1{
+    font-size: 7vw;
+    font-weight: 700;
+    color: lightseagreen;
+}
+.bubble{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(122, 211, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(101, 172, 168);
+    transform: scale(1.07);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width:600px) {
+    #plane{
+        height: 78.8%;
+        width: 80%;
+        background-color: #DADADA;
+    }
+    .ptop{
+        height: 60px;
+
+    }
+    .pfoot{
+        height: calc(100%-60px);
+    }
+    .box{
+        gap: .5vw;
+    }
+    .box h2{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+    .ele{
+        width: 5vw;
+        height: 2vh;
+        font-size: 2.6vw;
+    }
+    button{
+        width: 60px;
+        font-size: 3.5vw;
+    }
+    .pfoot h1{
+        font-size: 9vw;
+        font-weight: 800;  
+    }
+}
