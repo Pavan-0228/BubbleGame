@@ -1,12 +1,12 @@
 let count=60;  
 var score = 0;
 var hitrn;
-
+var Interval;
 
 
 let time = document.querySelector(".time");
 let Timer = document.querySelector(".Timer");
-let start = document.querySelector(".start");
+let restart = document.querySelector(".restart");
 var foot = document.querySelector(".pfoot")
 
 
@@ -23,7 +23,7 @@ bubblerMaker();
 
 
 function timer() {
-   var Interval = setInterval(function(){
+    Interval = setInterval(function(){
         if(count>0){
             count--;
             time.textContent = count;
@@ -59,12 +59,14 @@ foot.addEventListener("click",function(dets){
 })
 
 Timer.addEventListener("click",function(){
+  clearInterval(Interval);
     timer();
     hit();
 })
 
-start.addEventListener("click",function(){
+restart.addEventListener("click",function(){
   bubblerMaker();
-  count = 60;
+  clearInterval(Interval);
+  count = 61;
   timer();
 })
