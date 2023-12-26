@@ -68,6 +68,7 @@ restart.addEventListener("click",function(){
   bubblerMaker();
   clearInterval(Interval);
   score = 0;
+  document.querySelector(".Score").textContent = score;
   count = 61;
   timer();
 })
