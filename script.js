@@ -67,6 +67,7 @@ Timer.addEventListener("click",function(){
 restart.addEventListener("click",function(){
   bubblerMaker();
   clearInterval(Interval);
+  score = 0;
   count = 61;
   timer();
 })
